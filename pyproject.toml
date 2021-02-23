@@ -1,0 +1,14 @@
+[tool]
+[tool.poetry]
+name = "FireqanqUserbot_Deployer"
+version = "1.0"
+description = "Automatic Deploy FireqanqUserBot to Heroku"
+authors = ["fireganqQ <t.me/fireganqQ>"]
+[tool.poetry.dependencies]
+python = "^3.8"
+bs4 = "*"
+gitpython = "*"
+heroku3 = "*"
+requests = "*"
+rich = "*"
+telethon = "*"
