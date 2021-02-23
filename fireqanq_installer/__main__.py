@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     if os.path.isdir("./FireqanQUserBot/"):
         rm_r("./FireqanQUserBot/")
-    repo = Repo.clone_from("https://github.com/fireganqQ/FireqanQUserBot","./FireqanQUserBot/", branch="master")
+    repo = Repo.clone_from("https://github.com/fireganqQ/FireqanQUserBot")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
