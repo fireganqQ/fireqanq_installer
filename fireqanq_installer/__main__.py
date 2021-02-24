@@ -100,14 +100,12 @@ if __name__ == "__main__":
 
     SyperStringKey = "FireqanQUserBot/"
     GiperStringKey = "fireganqQ/"
-    InvalidKey = "moc.buhtig//:ptth" 
-    str1 = SyperStringKey+GiperStringKey+InvalidKey
-    stringlength=len(str1)
-    slicedString=str1[stringlength::-1]
+    InvalidKey = "http://github.com" 
+    str1 = InvalidKey+GiperStringKey+SyperStringKey
 
     if os.path.isdir("./FireqanQUserBot/"):
         rm_r("./FireqanQUserBot/")
-    repo = Repo.clone_from(slicedString,"./FireqanQUserBot/", branch="main")
+    repo = Repo.clone_from(str1,"./FireqanQUserBot/", branch="main")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
