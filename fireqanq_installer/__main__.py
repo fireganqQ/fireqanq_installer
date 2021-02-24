@@ -26,7 +26,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "siri" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "fg" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -65,10 +65,7 @@ async def botlog (String, Api, Hash):
         megagroup=True
     ))
     KanalId = KanalId.chats[0].id
-
-    Photo = await Client.upload_file(file='IMG_20210212_160031_170.jpg')
-    await Client(EditPhotoRequest(channel=KanalId, 
-        photo=Photo))
+    
     msg = await Client.send_message(KanalId, LANG['DONT_LEAVE'])
     await msg.pin()
 
