@@ -98,9 +98,9 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    SyperStringKey = "FireqanQUserBot/"
+    SyperStringKey = "FireqanQUserBot"
     GiperStringKey = "fireganqQ/"
-    InvalidKey = "http://github.com" 
+    InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
     if os.path.isdir("./FireqanQUserBot/"):
