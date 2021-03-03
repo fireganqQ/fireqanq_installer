@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
     if os.path.isdir("./FireqanQUserBot/"):
         rm_r("./FireqanQUserBot/")
-    repo = Repo.clone_from(str1,"./FireqanQUserBot/", branch="main")
+    repo = Repo.clone_from(str1,"./FireqanQUserBot/", branch="fireqanquserbot")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
@@ -112,6 +112,9 @@ if __name__ == "__main__":
 
     config['ANTI_SPAMBOT'] = 'False'
     config['ANTI_SPAMBOT_SHOUT'] = 'False'
+    config['ALIVE_NAME'] = ''
+    config['ALIVE_PIC'] = ''
+    config['ID_USER'] = ''
     config['API_HASH'] = ahash
     config['API_KEY'] = str(aid)
     config['BOTLOG'] = "False"
