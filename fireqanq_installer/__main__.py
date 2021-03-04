@@ -114,7 +114,7 @@ if __name__ == "__main__":
     config['ANTI_SPAMBOT_SHOUT'] = 'False'
     config['ALIVE_NAME'] = ''
     config['ALIVE_PIC'] = ''
-    config['ID_USER'] = ''
+    config['ALIVE_ID_USER'] = ''
     config['API_HASH'] = ahash
     config['API_KEY'] = str(aid)
     config['BOTLOG'] = "False"
