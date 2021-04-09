@@ -115,6 +115,7 @@ if __name__ == "__main__":
     config['ALIVE_NAME'] = ''
     config['ALIVE_PIC'] = ''
     config['ALIVE_ID_USER'] = ''
+    config["SUDO_ID"] = ""
     config['API_HASH'] = ahash
     config['API_KEY'] = str(aid)
     config['BOTLOG'] = "False"
