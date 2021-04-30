@@ -146,12 +146,9 @@ if __name__ == "__main__":
 
     basarili(LANG['SUCCESS_CONFIG'])
     bilgi(LANG['OPENING_DYNO'])
-
-    try:
-        app.process_formation()["worker"].scale(1)
-    except:
-        hata(LANG['ERROR_DYNO'])
-        exit(1)
+    
+    app.process_formation()["worker"].scale(1)
+        
 
     basarili(LANG['OPENED_DYNO'])
     basarili(LANG['SUCCESS_DEPLOY'])
