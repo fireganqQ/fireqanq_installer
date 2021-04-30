@@ -147,7 +147,7 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_CONFIG'])
     bilgi(LANG['OPENING_DYNO'])
     
-    print(app.process_formation())
+    app.process_formation().scale(1)
         
 
     basarili(LANG['OPENED_DYNO'])
